@@ -1,0 +1,1 @@
+mongod --dbpath "C:\Users\Miles\Documents\GitHub\moodb\data"

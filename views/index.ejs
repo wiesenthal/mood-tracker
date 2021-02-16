@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" href="#"/>
+<style>
+body {
+	background-color: #e6a8d7;
+	text-align: center;
+	align-content: center;
+}
+form
+{
+	align-content: center;
+	text-align: center;
+}
+h1   {color: blue;
+	font-size: 100px;
+	font-family: Arial;
+	margin-top: -20px;
+	margin-bottom: -20px;
+}
+pre
+{
+	font-family: Arial;
+	font-size: 20px;
+}
+input[type=text] {
+	background-color: white;
+	width: 400px;
+	font-size: 30px;
+	color: green;
+	font-family: Arial;
+	margin: 3px;
+}
+input[type=number] {
+	background-color: white;
+	width: 200px;
+	font-size: 30px;
+	color: green;
+	font-family: Arial;
+	margin: 3px;
+}
+button {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	font-size: 100px;
+	font-family: Arial;
+	font-weight: bold;
+	margin: 3px;
+	color: white;
+	 
+}
+.sad {
+	background-color: #008;
+}
+.medium {
+	background-color: #BBB;
+}
+.happy {
+	background-color: #FF0;
+}
+.amazing {
+	background-image: radial-gradient(circle at center, yellow, #0F0);
+	background-size: contain;
+}
+div {
+position: relative;
+margin: auto;
+padding: 10px;
+}
+div h2{
+	margin: 0px;
+	margin-bottom: -10px;
+	font-family: Arial;
+	font-size: 45px;
+	font-weight: bold;
+}
+div p{
+	font-family: Arial;
+	color: white;
+	font-size: 30px;
+}
+#event {
+	background-color: green;
+	width: 800px;
+	height: 300px;
+	position: relative;
+}
+#eventSubmit {
+	background-color: blue;
+	color: black;
+	width: 420px;
+	height: 50px;
+	font-size: 40px;
+	font-family: Arial;
+}
+
+</style>
+</head>
+<body>
+
+<h1>How are you feeling?</h1>
+<!--<form id="entry" name="input" action="/" method="post">-->
+<pre>please enter your username,            session number (for repeated use)</pre>
+<input type="text" value="" placeholder="Enter a unique user name" name="user" id="username" class="needed">
+<input type="text" value="0" placeholder="Enter the session number" name="session" id="session" class="needed">
+<br>
+<button value=1 name="mood" class="sad">1</button>
+<button value=2 name="mood" class="sad">2</button>
+<button value=3 name="mood" class="sad">3</button>
+<button value=4 name="mood" class="sad">4</button>
+<br>
+<button value=5 name="mood" class="medium">5</button>
+<button value=6 name="mood" class="medium">6</button>
+<button value=7 name="mood" class="medium">7</button>
+<button value=8 name="mood" class="medium">8</button>
+<br>
+<button value=9 name="mood" class="happy">9</button>
+<button value=10 name="mood" class="happy">10</button>
+<button value=11 name="mood" class="happy">11</button>
+<button value=12 name="mood" class="happy">12</button>
+<br>
+<button value=13 name="mood" class="amazing">13</button>
+<button value=14 name="mood" class="amazing">14</button>
+<button value=15 name="mood" class="amazing">15</button>
+<button value=16 name="mood" class="amazing">16</button>
+<br>
+<!--</form>-->
+<div id="event">
+<form id="eventF" action="/event" method="post">
+<h2>Event Input<h2>
+<p>Log a significant event</p>
+<input type="text"  placeholder="Event title..." name="etext" id="eventH"></input>
+<br>
+<input type="submit" id="eventSubmit">
+</input>
+</form>
+</div>
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="/javascripts/global.js"></script>
+</html>
